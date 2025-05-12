@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Startseite - Webseite Projekt</title>
+</head>
+<body>
+
+    <header class="w3-container w3-blue">
+        <h1>Webseite Projekt</h1>
+    </header>
+
+    <main class="w3-container">
+        <section class="w3-row-padding">
+            <div class="w3-third">
+                <h2>Ersteller</h2>
+                <p>Name des Erstellers: Max Mustermann</p>
+            </div>
+            <div class="w3-third">
+                <h2>Dokumentation</h2>
+                <p>Dateiname: titelblatt.md</p>
+            </div>
+            <div class="w3-third">
+                <h2>Abgabedatum</h2>
+                <p>Datum: 31.12.2023</p>
+            </div>
+        </section>
+
+        <section class="w3-row-padding">
+            <div class="w3-half">
+                <h2>Multimedia Inhalte</h2>
+                <video class="w3-border" controls preload="none">
+                    <source src="media/video.mp4" type="video/mp4">
+                    Ihr Browser unterstützt das Video-Tag.
+                </video>
+                <audio class="w3-border" controls preload="none">
+                    <source src="media/audio.mp3" type="audio/mp3">
+                    Ihr Browser unterstützt das Audio-Tag.
+                </audio>
+            </div>
+            <div class="w3-half">
+                <h2>Bild mit Text</h2>
+                <img src="media/beispielbild.jpg" alt="Beispielbild" class="w3-image">
+                <p>Dies ist ein Beispieltext zu dem Bild.</p>
+            </div>
+        </section>
+
+        <section class="w3-row-padding">
+            <div class="w3-full">
+                <h2>Liste mit Hover-Effekt</h2>
+                <ul class="w3-ul w3-hoverable">
+                    <li>Element 1</li>
+                    <li>Element 2</li>
+                    <li>Element 3</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="w3-row-padding">
+            <div class="w3-full">
+                <h2>Animiertes Element</h2>
+                <div class="w3-animate-fading">
+                    <p>Dies ist ein animiertes Element, das beim Laden der Seite erscheint.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="w3-row-padding">
+            <div class="w3-full">
+                <h2>Modal Fenster</h2>
+                <button onclick="document.getElementById('modal01').style.display='block'" class="w3-button w3-black">Öffne Modal</button>
+
+                <div id="modal01" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <span onclick="document.getElementById('modal01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <p>Dies ist der Inhalt des Modal-Fensters.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w3-container w3-blue">
+        <p>&copy; 2023 Max Mustermann</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

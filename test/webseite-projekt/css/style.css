@@ -1,0 +1,90 @@
+/* style.css */
+
+/* Importiere die W3.CSS-Bibliothek */
+@import url('https://www.w3schools.com/w3css/4/w3.css');
+
+/* Definiere die Schriftart für die gesamte Webseite */
+body {
+    font-family: 'Arial', sans-serif; /* Beispielschriftart */
+    margin: 0;
+    padding: 0;
+}
+
+/* Stil für die Kopfzeile */
+header {
+    background-color: #4CAF50; /* Grüner Hintergrund */
+    color: white; /* Weiße Schriftfarbe */
+    padding: 10px 0; /* Vertikales Padding */
+    text-align: center; /* Zentrierter Text */
+}
+
+/* Stil für Abschnitte */
+section {
+    padding: 20px; /* Innenabstand */
+}
+
+/* Stil für die Liste mit Hover-Effekt */
+ul {
+    list-style-type: none; /* Keine Aufzählungszeichen */
+    padding: 0; /* Kein Innenabstand */
+}
+
+ul li {
+    padding: 10px; /* Innenabstand für Listenelemente */
+    transition: background-color 0.3s; /* Übergangseffekt */
+}
+
+ul li:hover {
+    background-color: #f1f1f1; /* Hintergrundfarbe beim Hover */
+}
+
+/* Stil für Bilder mit Text */
+.image-text {
+    display: flex; /* Flexbox für Bild und Text */
+    align-items: center; /* Vertikale Zentrierung */
+}
+
+.image-text img {
+    max-width: 100%; /* Bildbreite anpassen */
+    height: auto; /* Höhe automatisch anpassen */
+    margin-right: 20px; /* Abstand zwischen Bild und Text */
+}
+
+/* Stil für das animierte Element */
+.animated {
+    animation: fadeIn 2s; /* Fade-In-Animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Stil für das Modal-Fenster */
+.modal {
+    display: none; /* Standardmäßig versteckt */
+    position: fixed; /* Fixiert auf dem Bildschirm */
+    z-index: 1; /* Über anderen Inhalten */
+    left: 0;
+    top: 0;
+    width: 100%; /* Volle Breite */
+    height: 100%; /* Volle Höhe */
+    overflow: auto; /* Scrollen bei Bedarf */
+    background-color: rgb(0,0,0); /* Schwarz mit Transparenz */
+    background-color: rgba(0,0,0,0.4); /* Schwarz mit Transparenz */
+}
+
+/* Stil für den Modal-Inhalt */
+.modal-content {
+    background-color: #fefefe; /* Weißer Hintergrund */
+    margin: 15% auto; /* Zentriert */
+    padding: 20px; /* Innenabstand */
+    border: 1px solid #888; /* Rahmen */
+    width: 80%; /* Breite des Modals */
+}
+
+/* Stil für das Favicon */
+link[rel="icon"] {
+    width: 16px; /* Breite des Favicons */
+    height: 16px; /* Höhe des Favicons */
+}
