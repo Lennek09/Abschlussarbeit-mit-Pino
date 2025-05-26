@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Spalten</title>
+    <title>Kontakt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--W3C Framework-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -19,9 +19,50 @@
       <a href="dienstleistungen.html" class="w3-bar-item w3-button w3-border-right">Dienstleistungen</a>
     </nav>
     <main>
-<p>Hier kommen die Spalten hin.</p>
+      <div class="w3-row-padding w3-margin-top">
+        <!-- Kontaktformular -->
+        <div class="w3-third">
+          <div class="w3-card w3-padding">
+            <h2>Kontaktformular</h2>
+            <form>
+              <label for="name">Name</label>
+              <input class="w3-input w3-border w3-margin-bottom" type="text" id="name" name="name" required>
+              <label for="email">E-Mail</label>
+              <input class="w3-input w3-border w3-margin-bottom" type="email" id="email" name="email" required>
+              <label for="nachricht">Nachricht</label>
+              <textarea class="w3-input w3-border w3-margin-bottom" id="nachricht" name="nachricht" rows="4" required></textarea>
+              <button class="w3-button w3-black w3-block" type="submit">Absenden</button>
+            </form>
+          </div>
+        </div>
+        <!-- Kontaktdaten -->
+        <div class="w3-third">
+          <div class="w3-card w3-padding">
+            <h2>Kontaktdaten</h2>
+            <p>
+              Kennella<br>
+              Lenn Kennel und Pino Gonnella<br>
+              Rotzstrasse 13<br>
+              12345 Hamburg<br>
+              <br>
+              Telefon: 01234 567890<br>
+              E-Mail: <a href="mailto:info@kennella.de">info@kennella.de</a>
+            </p>
+          </div>
+        </div>
+        <!-- Social Media -->
+        <div class="w3-third">
+          <div class="w3-card w3-padding">
+            <h2>Social Media</h2>
+            <p>
+              <a href="#" class="w3-button w3-black w3-margin-bottom">Instagram</a><br>
+              <a href="#" class="w3-button w3-black w3-margin-bottom">Facebook</a><br>
+              <a href="#" class="w3-button w3-black">YouTube</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
-    
     <footer class="w3-container w3-black">
       <p>© Kennella | Lenn Kennel und Pino Gonnella | 12345 Hamburg, Rotzstrasse 13</p>
     </footer>
