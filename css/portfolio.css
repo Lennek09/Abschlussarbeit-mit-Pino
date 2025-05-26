@@ -1,0 +1,19 @@
+.gallery-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.section-margin {
+    margin-top: 16px;
+}
+
+.audio-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 16px;
+    z-index: 1000;
+}
