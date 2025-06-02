@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Spalten</title>
+    <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--W3C Framework-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--Custom CSS-->
     <link rel="stylesheet" href="../css/portfolio.css">
+
 </head>
 <body>
     <header class="w3-container w3-black">
@@ -19,6 +20,17 @@
       <a href="dienstleistungen.html" class="w3-bar-item w3-button w3-border-right">Dienstleistungen</a>
     </nav>
     <main>
+      <!-- Neuer Abschnitt: Audiodatei als Block über den Bildern -->
+      <div class="audio-sidebar">
+        <h3>Portfolio Guide</h3>
+        <p>Willkommen bei Kennella Fotographie und Videographie – Genehmegine Sie sich unseren Audioguide während Sie durch unsere entzückende Kollektion and Bildmaterialien navigieren.</p>
+        <audio controls preload="none" style="width:100%;">
+          <source src="../media/Audio von Kennella .mp3" type="audio/mp3">
+          Ihr Browser unterstützt diesen Audio-Tag nicht.
+        </audio>
+      </div>
+
+      <!-- Grid mit den Bildern -->
       <div class="w3-row-padding">
         <div class="w3-third">
             <img src="../media/Groß (canon selphy coated test).jpeg" class="gallery-img" alt="Foto 1">
@@ -52,22 +64,13 @@
             <img src="../media/Groß (vogelhaus).jpeg" class="gallery-img" alt="Foto 9">
         </div>
       </div>
-      <!-- Neuer Abschnitt für Video -->
+      <!-- Abschnitt Video -->
       <div class="w3-container section-margin">
         <h2>Unser Video</h2>
         <video width="100%" controls preload="none">
           <source src="../media/Rick Roll (Different link + no ads).mp4" type="video/mp4">
           Ihr Browser ist möglicherweise Ranzig und zeigt das Video nicht an...LG Safari
         </video>
-      </div>
-      <!-- Neuer Abschnitt: Audiodatei in einer Sidebar -->
-      <div class="w3-sidebar audio-sidebar">
-        <h3>Portfolio Guide</h3>
-        <p>Willkommen bei Kennella Fotographie und Videographie – Genehmegine Sie sich unseren Audioguide während Sie durch unsere entzückende Kollektion and Bildmaterialien navigieren</p>
-        <audio controls preload="none" style="width:100%;">
-          <source src="../media/Audio von Kennella .mp3" type="audio/mp3">
-          Ihr Browser unterstützt diesen Audio-Tag nicht.
-        </audio>
       </div>
     </main>
     <footer class="w3-container w3-black">
