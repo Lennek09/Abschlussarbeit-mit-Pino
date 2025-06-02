@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--Custom CSS-->
     <link rel="stylesheet" href="../css/portfolio.css">
+      <!-- Favicon -->
+  <link rel="icon" href="../media/diaphragm.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../media/diaphragm.png" type="image/x-icon">
 
 </head>
 <body>
@@ -24,57 +27,117 @@
       <div class="audio-sidebar">
         <h3>Portfolio Guide</h3>
         <p>Willkommen bei Kennella Fotographie und Videographie – Genehmegine Sie sich unseren Audioguide während Sie durch unsere entzückende Kollektion and Bildmaterialien navigieren.</p>
-        <audio controls preload="none" style="width:100%;">
-          <source src="../media/Audio von Kennella .mp3" type="audio/mp3">
+        <audio controls preload="none" style="width:100%;" id="portfolioAudio" data-src="../media/Audio von Kennella .mp3">
           Ihr Browser unterstützt diesen Audio-Tag nicht.
         </audio>
       </div>
 
+      <script>
+        document.getElementById('portfolioAudio').addEventListener('play', function() {
+          if (!this.getAttribute('src')) {
+            this.setAttribute('src', this.getAttribute('data-src'));
+            this.load();
+          }
+        });
+      </script>
+
       <!-- Grid mit den Bildern -->
       <div class="w3-row-padding">
         <div class="w3-third">
-            <img src="../media/Groß (canon selphy coated test).jpeg" class="gallery-img" alt="Foto 1">
+          <div class="image-container">
+            <img src="../media/Groß (canon selphy coated test).jpeg" class="gallery-img" alt="guck ma Fluss" onclick="openModal(this)">
+            <div class="overlay">guck ma Fluss – Bild anklickbar</div>
+          </div>
         </div>
         <div class="w3-third">
-            <img src="../media/Groß (hamburger landscape-4).jpeg" class="gallery-img" alt="Foto 2">
+          <div class="image-container">
+            <img src="../media/Groß (hamburger landscape-4).jpeg" class="gallery-img" alt="Hamburger Landschaft" onclick="openModal(this)">
+            <div class="overlay">Hamburger Landschaft – Bild anklickbar</div>
+          </div>
         </div>
         <div class="w3-third">
-            <img src="../media/hamburger wand.jpeg" class="gallery-img" alt="Foto 3">
-        </div>
-      </div>
-      <div class="w3-row-padding section-margin">
-        <div class="w3-third">
-            <img src="../media/Groß (IMG_5592).jpeg" class="gallery-img" alt="Foto 4">
-        </div>
-        <div class="w3-third">
-            <img src="../media/Groß (IMG_5953).jpeg" class="gallery-img" alt="Foto 5">
-        </div>
-        <div class="w3-third">
-            <img src="../media/Groß (IMG_6148).jpeg" class="gallery-img" alt="Foto 6">
+          <div class="image-container">
+            <img src="../media/hamburger wand.jpeg" class="gallery-img" alt="Bild einer Wand aus speziellem Blickwinkel" onclick="openModal(this)">
+            <div class="overlay">Bild einer Wand aus speziellem Blickwinkel – Bild anklickbar</div>
+          </div>
         </div>
       </div>
       <div class="w3-row-padding section-margin">
         <div class="w3-third">
-            <img src="../media/Groß (SEVEN ELEVEN slide glitch).jpeg" class="gallery-img" alt="Foto 7">
+          <div class="image-container">
+            <img src="../media/Groß (IMG_5592).jpeg" class="gallery-img" alt="Bahnhof vibes" onclick="openModal(this)">
+            <div class="overlay">Bahnhof vibes – Bild anklickbar</div>
+          </div>
         </div>
         <div class="w3-third">
-            <img src="../media/Groß (vintage strassenspiegel).jpeg" class="gallery-img" alt="Foto 8">
+          <div class="image-container">
+            <img src="../media/Groß (IMG_5953).jpeg" class="gallery-img" alt="Flugiii" onclick="openModal(this)">
+            <div class="overlay">Flugiii – Bild anklickbar</div>
+          </div>
         </div>
         <div class="w3-third">
-            <img src="../media/Groß (vogelhaus).jpeg" class="gallery-img" alt="Foto 9">
+          <div class="image-container">
+            <img src="../media/Groß (IMG_6148).jpeg" class="gallery-img" alt="Ghetto Zug" onclick="openModal(this)">
+            <div class="overlay">Ghetto Zug – Bild anklickbar</div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding section-margin">
+        <div class="w3-third">
+          <div class="image-container">
+            <img src="../media/Groß (SEVEN ELEVEN slide glitch).jpeg" class="gallery-img" alt="Seeeeeeeeeven Eleeeeeeven" onclick="openModal(this)">
+            <div class="overlay">Seeeeeeeeeven Eleeeeeeven – Bild anklickbar</div>
+          </div>
+        </div>
+        <div class="w3-third">
+          <div class="image-container">
+            <img src="../media/Groß (vintage strassenspiegel).jpeg" class="gallery-img" alt="Boah Strassenspiegel" onclick="openModal(this)">
+            <div class="overlay">Boah Strassenspiegel – Bild anklickbar</div>
+          </div>
+        </div>
+        <div class="w3-third">
+          <div class="image-container">
+            <img src="../media/Groß (vogelhaus).jpeg" class="gallery-img" alt="Mein Unterschlupf" onclick="openModal(this)">
+            <div class="overlay">Mein Unterschlupf – Bild anklickbar</div>
+          </div>
         </div>
       </div>
       <!-- Abschnitt Video -->
       <div class="w3-container section-margin">
         <h2>Unser Video</h2>
-        <video width="100%" controls preload="none">
-          <source src="../media/Rick Roll (Different link + no ads).mp4" type="video/mp4">
-          Ihr Browser ist möglicherweise Ranzig und zeigt das Video nicht an...LG Safari
+        <video width="100%" controls preload="none" id="portfolioVideo" data-src="../media/Rick Roll (Different link + no ads).mp4">
+          Ihr Browser unterstützt das Video-Tag nicht.
         </video>
+      </div>
+
+      <script>
+        document.getElementById('portfolioVideo').addEventListener('play', function() {
+          if (!this.getAttribute('src')) {
+            this.setAttribute('src', this.getAttribute('data-src'));
+            this.load();
+          }
+        });
+      </script>
+
+      <!-- W3CSS Modal Window -->
+      <div id="imgModal" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <img id="modalImg" style="width:100%">
+          <div id="modalCaption" class="w3-container w3-black"></div>
+        </div>
       </div>
     </main>
     <footer class="w3-container w3-black">
       <p>© Kennella | Lenn Kennel und Pino Gonnella | 12345 Hamburg, Rotzstrasse 13</p>
     </footer>
+
+    <script>
+      function openModal(imgElement) {
+        document.getElementById('modalImg').src = imgElement.src;
+        document.getElementById('modalCaption').innerText = imgElement.alt;
+        document.getElementById('imgModal').style.display = 'block';
+      }
+    </script>
 </body>
 </html>
